@@ -1,0 +1,18 @@
+{
+  "name": "@yoruba-app/shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
