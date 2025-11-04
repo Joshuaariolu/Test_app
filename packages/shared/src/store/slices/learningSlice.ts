@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Lesson, UserProgress } from '../../types/learning';
 
-interface LearningState {
+export interface LearningState {
   currentLesson: Lesson | null;
   userProgress: UserProgress | null;
   lessons: Lesson[];

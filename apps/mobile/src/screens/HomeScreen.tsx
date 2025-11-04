@@ -1,16 +1,58 @@
 import React from 'react';
-import { Box, Text, VStack } from 'native-base';
-import { WelcomeMessage } from '@yoruba-app/shared';
+import { View, Text, StyleSheet } from 'react-native';
 
 export function HomeScreen() {
   return (
-    <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
-      <VStack space={4} alignItems="center">
-        <Text fontSize="xl" fontWeight="bold">
+    <View style={styles.container}>
+      <View style={styles.content}>
+        <Text style={styles.title}>
           Welcome to Yoruba Learning App
         </Text>
-        <WelcomeMessage />
-      </VStack>
-    </Box>
+        <View style={styles.welcomeBox}>
+          <Text style={styles.greeting}>
+            Ẹ kú àárọ̀! Welcome to your Yoruba learning journey! 🌟
+          </Text>
+          <Text style={styles.subtitle}>
+            Start learning Yoruba language with interactive lessons and cultural context.
+          </Text>
+        </View>
+      </View>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  content: {
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  welcomeBox: {
+    padding: 16,
+    backgroundColor: '#f0f8ff',
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  greeting: {
+    fontSize: 16,
+    color: '#333',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#666',
+    textAlign: 'center',
+  },
+});

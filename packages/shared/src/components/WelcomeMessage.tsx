@@ -1,6 +1,6 @@
-import React from 'react';
 
-export function WelcomeMessage() {
+
+export function WelcomeMessage(): JSX.Element {
   return (
     <div style={{ 
       padding: '16px', 

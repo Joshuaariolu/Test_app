@@ -1,14 +1,17 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "composite": true,
     "strict": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@yoruba-app/shared": ["../../packages/shared/src"]
+      "@yoruba-app/shared": [
+        "../../packages/shared/dist"
+      ]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
-  "references": [{ "path": "../../packages/shared" }]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
